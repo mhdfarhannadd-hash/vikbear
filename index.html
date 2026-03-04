@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIKBEAR | The Bear That Defies The Trend</title>
+    
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        :root { --gold: #d4af37; --dark: #0a0a0a; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark); color: #ffffff; scroll-behavior: smooth; overflow-x: hidden; }
+        h1, h2, h3, .font-viking { font-family: 'Cinzel', serif; }
+        
+        .viking-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(212, 175, 55, 0.2); backdrop-filter: blur(10px); transition: 0.3s; }
+        .viking-card:hover { border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1); }
+        
+        .gold-text { background: linear-gradient(to right, #d4af37, #fde68a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-gold { background: linear-gradient(45deg, #b8860b, #ffd700); color: black; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
+        .btn-gold:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(255, 215, 0, 0.4); }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 10px; }
+    </style>
+</head>
+
+<body class="flex flex-col items-center overflow-x-hidden w-full text-center">
+    <!-- BAGIAN NAVBAR -->
+    <nav class="fixed w-full z-50 bg-black/90 border-b border-white/5 px-4 md:px-6 py-4 flex justify-between items-center backdrop-blur-md">
+        <div class="flex items-center gap-2 md:gap-3 z-10 w-32">
+            <img src="logo.jpg" onerror="this.onerror=null;this.src='https://placehold.co/100x100/1a1a1a/d4af37?text=VB';" alt="Vikbear Logo" class="w-8 h-8 md:w-10 md:h-10 rounded-full border border-yellow-600 object-cover">
+            <div class="font-viking text-xl md:text-2xl font-black text-yellow-500 tracking-tighter">VIKBEAR</div>
+        </div>
+        
+        <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-8 text-[10px] uppercase font-bold tracking-[0.2em]">
+            <a href="#manifesto" class="hover:text-yellow-500 transition">Manifesto</a>
+            <a href="#battleplan" class="hover:text-yellow-500 transition">Battle Plan</a>
+            <a href="#tokenomics" class="hover:text-yellow-500 transition">Tokenomics</a>
+        </div>
+        
+        <div class="z-10 flex justify-end w-32">
+            <a href="https://t.me/+DZ8QiT5-4uA3YjM9" target="_blank" class="btn-gold px-4 py-2 md:px-5 md:py-2 rounded-lg text-[9px] md:text-xs uppercase shadow-[0_0_15px_rgba(212,175,55,0.3)] tracking-wider">JOIN THE ARMY</a>
+        </div>
+    </nav>
+
+    <!-- BAGIAN HERO (UTAMA) -->
+    <section class="relative pt-36 pb-20 px-6 flex flex-col items-center min-h-screen justify-center w-full">
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-yellow-600/10 blur-[150px] -z-10 rounded-full pointer-events-none"></div>
+        
+        <div data-aos="zoom-in" class="mb-8 relative group">
+            <div class="absolute inset-0 bg-yellow-500 rounded-full blur-2xl opacity-20 group-hover:opacity-40 transition duration-500 max-w-xs mx-auto"></div>
+            <img src="logo.jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1a1a1a/d4af37?text=LOGO+VIKBEAR';" alt="VIKBEAR" class="relative w-56 h-56 md:w-80 md:h-80 rounded-full border-4 border-yellow-600 shadow-[0_0_60px_rgba(184,134,11,0.4)] object-cover bg-black mx-auto">
+        </div>
+        
+        <div data-aos="fade-down" class="mb-6 inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/50 px-6 py-2 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+            <span class="text-white text-xs md:text-sm font-bold tracking-widest uppercase">TICKER:</span>
+            <span class="text-yellow-500 text-lg md:text-xl font-black font-mono tracking-widest">$VIKBEAR</span>
+        </div>
+        
+        <h1 data-aos="fade-up" data-aos-delay="100" class="text-5xl md:text-8xl font-black gold-text uppercase mb-6 tracking-tighter leading-tight">The Bear That<br>Defies The Trend</h1>
+        
+        <p data-aos="fade-up" data-aos-delay="200" class="max-w-3xl text-gray-300 text-lg md:text-2xl mb-12 leading-relaxed font-light italic px-4">
+            "VIKBEAR doesn't follow trends. We create them. We rebel against the notion that 'bear = dump'. Leading the way when others surrender."
+        </p>
+        
+        <div data-aos="fade-up" data-aos-delay="300" class="w-full max-w-2xl flex flex-col items-center gap-6">
+            
+            <!-- TOMBOL PUMP.FUN -->
+            <a id="btn-pumpfun" href="#" class="bg-yellow-500 text-black hover:scale-105 transition-transform duration-300 w-full md:w-auto px-10 md:px-12 py-4 rounded-xl font-black uppercase text-xl md:text-2xl tracking-widest flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                <img src="pump.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/16a34a/ffffff?text=PUMP';" alt="Pump Fun" class="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover shadow-sm bg-black/10 p-0.5">
+                <span id="text-pumpfun">Loading...</span>
+            </a>
+            
+            <!-- KOTAK CONTRACT ADDRESS -->
+            <div class="w-full bg-white/5 border border-white/10 p-5 rounded-xl flex flex-col items-center justify-center gap-2 relative group cursor-pointer hover:bg-white/10 transition" onclick="copyCA()">
+                <span class="text-gray-500 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                    Contract Address <span class="text-[10px] bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded-full">Click to Copy</span>
+                </span>
+                <code id="ca-text" class="text-sm md:text-lg text-yellow-500 font-mono tracking-widest break-all">Loading...</code>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN MANIFESTO -->
+    <section id="manifesto" class="py-24 px-6 max-w-7xl w-full border-t border-white/5 mx-auto">
+        <h2 data-aos="fade-up" class="text-4xl md:text-6xl font-viking mb-4 uppercase gold-text tracking-widest">Vikbear Manifesto</h2>
+        <div data-aos="fade-up" data-aos-delay="100" class="w-24 h-1 bg-yellow-500 mx-auto rounded-full mb-16"></div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div data-aos="fade-up" class="viking-card p-10 rounded-3xl flex flex-col items-center">
+                <div class="text-6xl mb-6">🐻</div>
+                <h3 class="text-2xl font-viking text-yellow-500 mb-4">Rebels of Meaning</h3>
+                <p class="text-gray-300 text-base leading-relaxed">We rebel against the idea that "bear = dump". Who says bears must be synonymous with destroyed portfolios? <span class="text-yellow-500 font-bold">VIKBEAR shatters that myth.</span></p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="viking-card p-10 rounded-3xl flex flex-col items-center border-yellow-500/40">
+                <div class="text-6xl mb-6">📈</div>
+                <h3 class="text-2xl font-viking text-yellow-500 mb-4">Building in Panic</h3>
+                <p class="text-gray-300 text-base leading-relaxed">When the market panics and fear strikes, we don't hide. We build. We take over the red charts and turn them into a launchpad to fly.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="viking-card p-10 rounded-3xl flex flex-col items-center">
+                <div class="text-6xl mb-6">🔥</div>
+                <h3 class="text-2xl font-viking text-yellow-500 mb-4">Igniting The Movement</h3>
+                <p class="text-gray-300 text-base leading-relaxed">When old narratives die, VIKBEAR ignites the fire of a new movement. We don't follow existing trends, we are the ones who create them.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN BATTLE PLAN (ROADMAP) -->
+    <section id="battleplan" class="py-24 px-6 max-w-7xl w-full border-t border-white/5 bg-[#050505]/50 relative overflow-hidden mx-auto">
+        <div class="absolute inset-0 bg-yellow-500/5 blur-3xl rounded-full -z-10 transform -translate-y-1/2"></div>
+        
+        <h2 data-aos="fade-up" class="text-4xl md:text-6xl font-viking mb-16 uppercase gold-text tracking-widest">The Battle Plan</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div data-aos="fade-up" class="relative p-6 viking-card rounded-2xl group overflow-hidden">
+                <div class="absolute -right-4 -top-4 text-6xl opacity-10 group-hover:scale-125 transition">🪓</div>
+                <div class="text-xs font-mono text-yellow-500 mb-1 uppercase tracking-tighter">Phase 1</div>
+                <h3 class="text-xl font-black uppercase mb-2 tracking-tighter">The Trenches</h3>
+                <p class="text-xs text-gray-400 font-bold uppercase">Launch & Survive.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="relative p-6 viking-card rounded-2xl border-yellow-500/50 group overflow-hidden">
+                <div class="absolute -right-4 -top-4 text-6xl opacity-10 group-hover:scale-125 transition">🛡️</div>
+                <div class="text-xs font-mono text-yellow-500 mb-1 uppercase tracking-tighter">Phase 2</div>
+                <h3 class="text-xl font-black uppercase mb-2 tracking-tighter">The Escape</h3>
+                <p class="text-xs text-gray-400 font-bold uppercase">Break the Curve.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="relative p-6 viking-card rounded-2xl group overflow-hidden">
+                <div class="absolute -right-4 -top-4 text-6xl opacity-10 group-hover:scale-125 transition">👑</div>
+                <div class="text-xs font-mono text-yellow-500 mb-1 uppercase tracking-tighter">Phase 3</div>
+                <h3 class="text-xl font-black uppercase mb-2 tracking-tighter">The Raid</h3>
+                <p class="text-xs text-gray-400 font-bold uppercase">Hold the Floor.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN TOKENOMICS -->
+    <section id="tokenomics" class="py-24 px-6 bg-[#050505] w-full border-t border-white/5 relative mx-auto">
+        <h2 data-aos="fade-up" class="text-4xl md:text-6xl font-viking mb-16 uppercase gold-text tracking-widest">Vik-Nomics</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div data-aos="flip-up" class="viking-card p-8 rounded-2xl flex flex-col items-center">
+                <p class="text-gray-500 text-xs uppercase font-bold mb-2 tracking-widest">Total Supply</p>
+                <h2 class="text-3xl md:text-4xl font-black text-yellow-500 font-mono">1,000,000,000</h2>
+            </div>
+            <div data-aos="flip-up" data-aos-delay="100" class="viking-card p-8 rounded-2xl flex flex-col items-center border-yellow-500/40">
+                <p class="text-gray-500 text-xs uppercase font-bold mb-2 tracking-widest">Tax Buy/Sell</p>
+                <h2 class="text-4xl md:text-5xl font-black text-yellow-500 font-viking">0%</h2>
+            </div>
+            <div data-aos="flip-up" data-aos-delay="200" class="viking-card p-8 rounded-2xl flex flex-col items-center">
+                <p class="text-gray-500 text-xs uppercase font-bold mb-2 tracking-widest">Launch Type</p>
+                <h2 class="text-3xl md:text-4xl font-black text-green-500 font-viking uppercase">100% Fair</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN FOOTER -->
+    <footer class="pt-24 pb-12 border-t border-white/5 w-full bg-black px-6 relative overflow-hidden">
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-64 bg-yellow-900/10 blur-[100px] -z-10"></div>
+        
+        <div data-aos="zoom-in" class="max-w-4xl w-full mb-20 bg-white/5 border border-yellow-500/20 p-10 md:p-16 rounded-[3rem] backdrop-blur-sm flex flex-col items-center mx-auto">
+            <h2 class="text-3xl md:text-5xl font-viking gold-text mb-6 uppercase">Don't Fight The Tide Alone.</h2>
+            <p class="text-gray-300 leading-relaxed mb-10 text-lg md:text-xl font-light max-w-2xl mx-auto">
+                Join the VIKBEAR clan. Together we crush the red candles and build a green empire.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 w-full">
+                <a href="https://x.com/Vikbear_sol" target="_blank" class="w-full sm:w-auto px-10 py-4 rounded-full border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black transition duration-300 font-black uppercase text-sm tracking-widest">Twitter (X)</a>
+                <a href="https://t.me/+DZ8QiT5-4uA3YjM9" target="_blank" class="w-full sm:w-auto px-10 py-4 rounded-full border-2 border-yellow-500 bg-yellow-500 text-black hover:bg-transparent hover:text-yellow-500 transition duration-300 font-black uppercase text-sm tracking-widest shadow-[0_0_20px_rgba(212,175,55,0.3)]">Telegram</a>
+            </div>
+        </div>
+        
+        <div class="font-viking text-3xl text-gray-800 mb-4 tracking-tighter">VIKBEAR</div>
+        <p class="text-[10px] text-gray-600 uppercase font-black tracking-[0.4em]">© 2026 VIKBEAR. REBELS OF MEANING.</p>
+    </footer>
+
+    <!-- NOTIFIKASI TOAST -->
+    <div id="copy-toast" class="fixed bottom-5 right-5 bg-yellow-500 text-black px-6 py-3 rounded-xl font-bold transform translate-y-20 opacity-0 transition-all duration-300 z-[999] shadow-[0_0_20px_rgba(212,175,55,0.4)] border border-yellow-400 pointer-events-none">
+        ✅ Contract Address Copied!
+    </div>
+    <div id="pump-toast" class="fixed bottom-5 right-5 bg-yellow-500 text-black px-6 py-3 rounded-xl font-bold transform translate-y-20 opacity-0 transition-all duration-300 z-[999] shadow-[0_0_20px_rgba(212,175,55,0.4)] border border-yellow-400 pointer-events-none">
+        🚀 Trade link will be available at launch!
+    </div>
+
+    <!-- SCRIPT LIBRARY & LOGIK -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // =========================================================================
+        // 🚀 KONFIGURASI SMART CONTRACT & PUMP.FUN
+        // =========================================================================
+        const CA_ADDRESS = ""; // <-- Masukkan Contract Address di sini
+        const PUMPFUN_URL = ""; // <-- Masukkan Link Pump.fun di sini
+
+        // =========================================================================
+        // Inisialisasi animasi AOS
+        AOS.init({ duration: 1000, once: true });
+
+        // Auto-Setup Website berdasarkan Konfigurasi di atas
+        document.addEventListener("DOMContentLoaded", function() {
+            const caTextEl = document.getElementById("ca-text");
+            const btnPumpfun = document.getElementById("btn-pumpfun");
+            const textPumpfun = document.getElementById("text-pumpfun");
+
+            // Setup CA Text
+            if (CA_ADDRESS.trim() !== "") {
+                caTextEl.innerText = CA_ADDRESS;
+            } else {
+                caTextEl.innerText = "CA_COMING_SOON";
+            }
+
+            // Setup Pump.fun Button
+            if (PUMPFUN_URL.trim() !== "") {
+                btnPumpfun.href = PUMPFUN_URL;
+                btnPumpfun.target = "_blank";
+                textPumpfun.innerText = "Buy on Pump.fun";
+                btnPumpfun.onclick = null; // Menghapus fungsi toast
+            } else {
+                btnPumpfun.href = "#";
+                textPumpfun.innerText = "Trade Coming Soon";
+                btnPumpfun.onclick = function(e) {
+                    e.preventDefault();
+                    showPumpToast();
+                };
+            }
+        });
+
+        // Fungsi menampilkan toast Pump.fun
+        function showPumpToast() {
+            var toast = document.getElementById("pump-toast");
+            toast.classList.remove("translate-y-20", "opacity-0");
+            setTimeout(function() {
+                toast.classList.add("translate-y-20", "opacity-0");
+            }, 3000);
+        }
+
+        // Fungsi menyalin CA
+        function copyCA() {
+            var caText = document.getElementById("ca-text").innerText;
+            if (caText === "CA_COMING_SOON") return; // Jangan copy jika belum rilis
+            
+            function showToast() {
+                var toast = document.getElementById("copy-toast");
+                toast.classList.remove("translate-y-20", "opacity-0");
+                setTimeout(function() {
+                    toast.classList.add("translate-y-20", "opacity-0");
+                }, 2000);
+            }
+            
+            function fallbackCopyTextToClipboard(text) {
+                var textArea = document.createElement("textarea");
+                textArea.value = text;
+                textArea.style.top = "0"; textArea.style.left = "0"; textArea.style.position = "fixed";
+                document.body.appendChild(textArea);
+                textArea.focus(); textArea.select();
+                try {
+                    if(document.execCommand('copy')) showToast();
+                } catch (err) {}
+                document.body.removeChild(textArea);
+            }
+            
+            if (!navigator.clipboard) {
+                fallbackCopyTextToClipboard(caText);
+                return;
+            }
+            navigator.clipboard.writeText(caText).then(showToast).catch(function() {
+                fallbackCopyTextToClipboard(caText);
+            });
+        }
+    </script>
+</body>
+</html>
