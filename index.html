@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$VIKBEAR | The Bear That Defies The Trend</title>
+  <meta name="description" content="$VIKBEAR is a pre-launch Solana memecoin community. No official CA yet. No presale. No private allocation. Fair launch only." />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="$VIKBEAR | The Bear That Defies The Trend" />
+  <meta property="og:description" content="Pre-launch Solana memecoin community. No official CA yet. No presale. Fair launch only." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vikbear.xyz" />
+  <meta property="og:image" content="https://vikbear.xyz/logo.jpg" />
+
+  <link rel="icon" href="logo.png" sizes="512x512" type="image/png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800;900&family=Space+Grotesk:wght@400;700;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bear-main: #8b4513;
+      --bear-dark: #4a240a;
+      --bear-light: #f3c68f;
+      --bg-dark: #0f0a06;
+      --line: rgba(243, 198, 143, .22);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(139, 69, 19, .28), transparent 32%),
+        radial-gradient(circle at 85% 12%, rgba(243, 198, 143, .12), transparent 28%),
+        linear-gradient(180deg, #0f0a06 0%, #170d07 45%, #0f0a06 100%);
+      color: #fff7ed;
+      min-height: 100vh;
+    }
+
+    .font-viking { font-family: 'Cinzel', serif; }
+
+    .gold-text {
+      background: linear-gradient(135deg, #fff2c7, #f3c68f 45%, #b87333 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .card {
+      background: rgba(28, 16, 8, .78);
+      border: 1px solid var(--line);
+      box-shadow: 0 22px 80px rgba(0, 0, 0, .35);
+      backdrop-filter: blur(12px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #f3c68f, #b87333);
+      color: #1c1008;
+      font-weight: 900;
+      box-shadow: 0 14px 38px rgba(184, 115, 51, .28);
+    }
+
+    .btn-primary:hover { transform: translateY(-2px); filter: brightness(1.08); }
+
+    .btn-secondary {
+      border: 1px solid rgba(243, 198, 143, .42);
+      color: #f3c68f;
+      background: rgba(243, 198, 143, .06);
+    }
+
+    .btn-secondary:hover { background: rgba(243, 198, 143, .14); }
+
+    .badge {
+      border: 1px solid rgba(243, 198, 143, .28);
+      background: rgba(243, 198, 143, .08);
+      color: #f3c68f;
+    }
+
+    .warning {
+      background: linear-gradient(135deg, rgba(255, 196, 87, .18), rgba(139, 69, 19, .12));
+      border: 1px solid rgba(255, 196, 87, .38);
+    }
+
+    .section-title {
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#0f0a06]/86 backdrop-blur-xl border-b border-[#f3c68f]/10">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="logo.jpg" onerror="this.src='logo.png'" alt="VIKBEAR logo" class="w-11 h-11 rounded-full border border-[#f3c68f]/30" />
+        <div>
+          <div class="font-viking text-lg font-black gold-text">$VIKBEAR</div>
+          <div class="text-[11px] text-[#f3c68f]/70 uppercase tracking-[0.22em]">Pre-launch</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm text-[#f3c68f]/80">
+        <a href="#manifesto" class="hover:text-[#f3c68f]">Manifesto</a>
+        <a href="#safety" class="hover:text-[#f3c68f]">Safety</a>
+        <a href="#battleplan" class="hover:text-[#f3c68f]">Battle Plan</a>
+        <a href="#tokenomics" class="hover:text-[#f3c68f]">Tokenomics</a>
+        <a href="#vikepaper" class="hover:text-[#f3c68f]">Vikepaper</a>
+      </nav>
+
+      <a href="https://t.me/vikebear" target="_blank" rel="noopener" class="btn-primary px-5 py-2 rounded-full text-sm transition">Join Telegram</a>
+    </div>
+  </header>
+
+  <main id="top" class="pt-28">
+    <section class="max-w-7xl mx-auto px-5 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 badge rounded-full px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] mb-7">
+          No official CA yet
+        </div>
+
+        <h1 class="font-viking text-5xl md:text-7xl font-black leading-tight mb-6">
+          The Bear That<br />
+          <span class="gold-text">Defies The Trend</span>
+        </h1>
+
+        <p class="text-xl md:text-2xl text-[#f8dfbd] mb-6 max-w-2xl">
+          A pre-launch Solana memecoin community built around one idea: the bear is not fear. The bear is instinct.
+        </p>
+
+        <p class="text-[#d9b98e] text-base md:text-lg max-w-2xl mb-9 leading-relaxed">
+          $VIKBEAR is not live yet. No presale. No private allocation. No official contract address until the launch announcement. The cave is forming before the chart exists.
+        </p>
+
+        <div class="flex flex-wrap gap-4 mb-9">
+          <a href="https://t.me/vikebear" target="_blank" rel="noopener" class="btn-primary px-7 py-4 rounded-xl transition">Join Telegram</a>
+          <a href="https://x.com/Vikbear_sol" target="_blank" rel="noopener" class="btn-secondary px-7 py-4 rounded-xl transition">Follow X</a>
+          <a href="vike-paper.pdf" class="btn-secondary px-7 py-4 rounded-xl transition">Read Vikepaper</a>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-3 max-w-2xl">
+          <div class="card rounded-2xl p-4"><div class="text-[#f3c68f] text-sm">Ticker</div><div class="font-black text-2xl">$VIKBEAR</div></div>
+          <div class="card rounded-2xl p-4"><div class="text-[#f3c68f] text-sm">Network</div><div class="font-black text-2xl">Solana</div></div>
+          <div class="card rounded-2xl p-4"><div class="text-[#f3c68f] text-sm">Status</div><div class="font-black text-2xl">Pre-launch</div></div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute inset-0 blur-3xl bg-[#b87333]/25 rounded-full"></div>
+        <div class="relative card rounded-[2rem] p-6 md:p-8">
+          <img src="logo.jpg" onerror="this.src='logo.png'" alt="Vike Bear" class="w-full rounded-[1.5rem] border border-[#f3c68f]/20" />
+          <div class="mt-6 warning rounded-2xl p-5">
+            <div class="font-black text-[#ffd699] uppercase tracking-[0.16em] text-sm mb-2">Safety first</div>
+            <p class="text-[#ffe8c8] leading-relaxed">
+              Contract Address: <b>Not released yet.</b> If someone posts a CA before the official launch announcement, treat it as fake.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="safety" class="max-w-7xl mx-auto px-5 pb-14">
+      <div class="warning rounded-3xl p-6 md:p-8">
+        <div class="grid lg:grid-cols-[1fr_auto] gap-6 items-center">
+          <div>
+            <h2 class="font-viking text-3xl font-black gold-text mb-3">Pre-launch safety notice</h2>
+            <p class="text-[#ffe8c8] text-lg leading-relaxed max-w-4xl">
+              There is no official Contract Address yet. There is no presale, no private sale, and no airdrop claim page. Admins will never DM first for funds, seed phrases, wallet access, or private allocation.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3 lg:justify-end">
+            <span class="badge px-4 py-2 rounded-full text-sm font-bold">NO CA YET</span>
+            <span class="badge px-4 py-2 rounded-full text-sm font-bold">NO PRESALE</span>
+            <span class="badge px-4 py-2 rounded-full text-sm font-bold">FAIR LAUNCH ONLY</span>
+            <span class="badge px-4 py-2 rounded-full text-sm font-bold">VERIFY LINKS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="manifesto" class="max-w-7xl mx-auto px-5 py-16">
+      <div class="text-center mb-12">
+        <p class="section-title text-[#f3c68f]/70 text-sm font-bold">Manifesto</p>
+        <h2 class="font-viking text-4xl md:text-5xl font-black gold-text">The bear was never the enemy</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="card rounded-3xl p-7">
+          <h3 class="font-viking text-2xl text-[#f3c68f] mb-4">Fear got lazy</h3>
+          <p class="text-[#d9b98e] leading-relaxed">Crypto turned the bear into a warning sign. Red chart. Bad season. Panic button. VIKBEAR takes that symbol back.</p>
+        </article>
+        <article class="card rounded-3xl p-7">
+          <h3 class="font-viking text-2xl text-[#f3c68f] mb-4">The cave forms first</h3>
+          <p class="text-[#d9b98e] leading-relaxed">Before launch, we build culture: memes, lore, safety discipline, and people who know how to wait without getting loud and fake.</p>
+        </article>
+        <article class="card rounded-3xl p-7">
+          <h3 class="font-viking text-2xl text-[#f3c68f] mb-4">No fake promises</h3>
+          <p class="text-[#d9b98e] leading-relaxed">VIKBEAR is a memecoin community. No guaranteed outcome. No financial advice. Just a bear with an axe walking against the noise.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="battleplan" class="max-w-7xl mx-auto px-5 py-16">
+      <div class="text-center mb-12">
+        <p class="section-title text-[#f3c68f]/70 text-sm font-bold">Battle Plan</p>
+        <h2 class="font-viking text-4xl md:text-5xl font-black gold-text">Community goals, not guarantees</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card rounded-3xl p-6"><div class="text-[#f3c68f] font-black mb-2">Phase 1</div><h3 class="font-viking text-2xl mb-3">Build the cave</h3><p class="text-[#d9b98e]">Open community channels, publish safety notices, shape the voice, and grow organic early activity.</p></div>
+        <div class="card rounded-3xl p-6"><div class="text-[#f3c68f] font-black mb-2">Phase 2</div><h3 class="font-viking text-2xl mb-3">Launch clean</h3><p class="text-[#d9b98e]">Announce the official CA only through verified channels when the fair launch is ready.</p></div>
+        <div class="card rounded-3xl p-6"><div class="text-[#f3c68f] font-black mb-2">Phase 3</div><h3 class="font-viking text-2xl mb-3">Spread the meme</h3><p class="text-[#d9b98e]">Push memes, stickers, posts, and raids without spam, harassment, or fake urgency.</p></div>
+        <div class="card rounded-3xl p-6"><div class="text-[#f3c68f] font-black mb-2">Phase 4</div><h3 class="font-viking text-2xl mb-3">Build the saga</h3><p class="text-[#d9b98e]">Expand lore, art, community campaigns, and listing submissions if eligible.</p></div>
+      </div>
+    </section>
+
+    <section id="tokenomics" class="max-w-7xl mx-auto px-5 py-16">
+      <div class="card rounded-[2rem] p-7 md:p-10">
+        <div class="text-center mb-10">
+          <p class="section-title text-[#f3c68f]/70 text-sm font-bold">Vike-Nomics</p>
+          <h2 class="font-viking text-4xl md:text-5xl font-black gold-text">Simple by design</h2>
+          <p class="text-[#d9b98e] mt-4 max-w-3xl mx-auto">Final token details will be confirmed before launch through official channels only.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-black/20 rounded-2xl p-5 border border-[#f3c68f]/10"><p class="text-[#f3c68f]/70">Ticker</p><h3 class="text-2xl font-black">$VIKBEAR</h3></div>
+          <div class="bg-black/20 rounded-2xl p-5 border border-[#f3c68f]/10"><p class="text-[#f3c68f]/70">Network</p><h3 class="text-2xl font-black">Solana</h3></div>
+          <div class="bg-black/20 rounded-2xl p-5 border border-[#f3c68f]/10"><p class="text-[#f3c68f]/70">Presale</p><h3 class="text-2xl font-black">None</h3></div>
+          <div class="bg-black/20 rounded-2xl p-5 border border-[#f3c68f]/10"><p class="text-[#f3c68f]/70">CA</p><h3 class="text-2xl font-black">Not released</h3></div>
+          <div class="bg-black/20 rounded-2xl p-5 border border-[#f3c68f]/10"><p class="text-[#f3c68f]/70">Launch</p><h3 class="text-2xl font-black">Fair launch</h3></div>
+          <div class="bg-black/20 rounded-2xl p-5 border border-[#f3c68f]/10"><p class="text-[#f3c68f]/70">Private allocation</p><h3 class="text-2xl font-black">None</h3></div>
+          <div class="bg-black/20 rounded-2xl p-5 border border-[#f3c68f]/10"><p class="text-[#f3c68f]/70">Supply</p><h3 class="text-2xl font-black">1B planned</h3></div>
+          <div class="bg-black/20 rounded-2xl p-5 border border-[#f3c68f]/10"><p class="text-[#f3c68f]/70">Tax</p><h3 class="text-2xl font-black">0% planned</h3></div>
+        </div>
+
+        <p class="text-[#d9b98e] text-sm mt-6 text-center">Always verify the official CA from this website, X, and Telegram before interacting with any token.</p>
+      </div>
+    </section>
+
+    <section id="vikepaper" class="max-w-7xl mx-auto px-5 py-16">
+      <div class="grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <p class="section-title text-[#f3c68f]/70 text-sm font-bold">Vikepaper</p>
+          <h2 class="font-viking text-4xl md:text-5xl font-black gold-text mb-5">Read the scroll</h2>
+          <p class="text-[#d9b98e] text-lg leading-relaxed mb-7">The Vikepaper covers the lore, launch principles, safety rules, community code, and battle plan for the pre-launch phase.</p>
+          <a href="vike-paper.pdf" class="btn-primary inline-block px-7 py-4 rounded-xl transition">Read Vikepaper</a>
+        </div>
+        <div class="card rounded-3xl p-7">
+          <h3 class="font-viking text-2xl text-[#f3c68f] mb-4">Inside v1.1</h3>
+          <ul class="space-y-3 text-[#d9b98e]">
+            <li>• Pre-launch notice</li>
+            <li>• Fair launch principles</li>
+            <li>• No CA yet safety rules</li>
+            <li>• Community vocabulary</li>
+            <li>• Roadmap without fake guarantees</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-5 py-20">
+      <div class="card rounded-[2rem] p-8 md:p-12 text-center">
+        <h2 class="font-viking text-4xl md:text-6xl font-black gold-text mb-5">Enter the bear den</h2>
+        <p class="text-[#d9b98e] text-lg max-w-3xl mx-auto mb-8">The launch has not started yet. Join the official channels, verify every announcement, and wait for the fair launch signal.</p>
+        <div class="flex flex-wrap gap-4 justify-center mb-8">
+          <a href="https://t.me/vikebear" target="_blank" rel="noopener" class="btn-primary px-8 py-4 rounded-xl transition">Join Telegram</a>
+          <a href="https://x.com/Vikbear_sol" target="_blank" rel="noopener" class="btn-secondary px-8 py-4 rounded-xl transition">Follow X</a>
+        </div>
+        <p class="text-[#f3c68f]/80 text-sm">No CA yet. No presale. No private sale. No profit claims. Fair launch only.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-[#f3c68f]/10 py-8 px-5 text-center text-[#d9b98e]">
+    <p class="mb-3">$VIKBEAR is a community memecoin created for entertainment, culture, and community building. It has no intrinsic financial value and makes no promises of profit.</p>
+    <p>© 2026 VIKBEAR. The Bear That Defies The Trend.</p>
+  </footer>
+</body>
+</html>
